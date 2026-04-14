@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS ck_grades (
+    id   SERIAL      PRIMARY KEY,
+    name VARCHAR(10) NOT NULL UNIQUE
+);

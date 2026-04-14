@@ -1,0 +1,15 @@
+{
+  "id": "smart-te-api",
+  "version": "1.0.0",
+  "description": "Smart T&E — GPS-powered Travel & Expense backend API",
+  "url": "https://your-backend-url.com",
+  "appBehaviour": "api",
+  "auth": {
+    "type": "API_KEY",
+    "config": {
+      "keyName": "X-Service-Key",
+      "value": "secret",
+      "in": "HEADER"
+    }
+  }
+}
