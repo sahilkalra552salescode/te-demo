@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:rajeev-scai.github.io)",
+      "WebFetch(domain:saleshub-docs.salescodeai.com)",
+      "Bash(mvn compile -q 2>&1)"
+    ]
+  }
+}
