@@ -21,6 +21,10 @@ public class TenantInterceptor implements HandlerInterceptor {
                              HttpServletResponse response,
                              Object handler) throws Exception {
 
+        if ("OPTIONS".equalsIgnoreCase(request.getMethod())) {
+            return true;
+        }
+
         String serviceKey = request.getHeader("X-Service-Key");
         if (serviceKey == null || !serviceKey.equals(configuredServiceKey)) {
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);

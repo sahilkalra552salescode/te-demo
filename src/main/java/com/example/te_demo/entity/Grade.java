@@ -20,4 +20,4 @@ public class Grade {
 
     @Column(name = "name", nullable = false, unique = true, length = 10)
     private String name;
-}
+}I a
